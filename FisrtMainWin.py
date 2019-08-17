@@ -11,8 +11,8 @@ class FirstMainWin(QMainWindow):
 
         self.status.showMessage("Hello world",5000)
 if __name__ == "__main__":
-    app=QApplication(sys.argv)
-    app.setWindowIcon(QIcon("./images/music.ico"))
+    myapp=QApplication(sys.argv)
+    myapp.setWindowIcon(QIcon("./images/music.ico"))
     main=FirstMainWin()
     main.show()
-    sys.exit(app.exec_())
+    sys.exit(myapp.exec_())
