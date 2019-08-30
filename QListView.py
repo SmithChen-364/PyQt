@@ -18,14 +18,14 @@ class ListView(QWidget):
     def __init__(self,parent=None):
         super(ListView,self).__init__(parent)
         self.setWindowTitle("QList show")
-        self.resize(300,270)
+        self.resize(300,100)
         
         layout=QVBoxLayout()
         
         listview=QListView()
         
         listModel=QStringListModel()
-        self.list=["列表1","列表2","列表3"]
+        self.list=["列表1","列表2","列表3","列表4","列表5"]
         listModel.setStringList(self.list)
         listview.setModel(listModel)
         
